@@ -6,4 +6,3 @@ tensorflow
 tensorflow-hub
 numpy
 pymongo
-PIL

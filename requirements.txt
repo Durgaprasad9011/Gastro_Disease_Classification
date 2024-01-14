@@ -1,0 +1,8 @@
+streamlit
+Pillow
+torch
+torchvision
+tensorflow
+tensorflow-hub
+numpy
+pymongo

@@ -149,11 +149,11 @@ elif page == "Comparative Study":
 
     # Resnet Model Results
     st.subheader("Resnet Model Results")
-    resnet_results_plot_path = os.path.join(script_directory, 'Images', 'Resnet', 'Loss, Accuracy Plot.png')
+    resnet_results_plot_path = os.path.join(script_directory, 'Images', 'Resnet', 'Loss, Accuracy Plot.jpg')
     resnet_results_plot = Image.open(resnet_results_plot_path)
     st.image(resnet_results_plot, caption="Accuracy, Loss Plot", use_column_width=True)
     
-    resnet_results_matrix_path = os.path.join(script_directory, 'Images', 'Resnet', 'Confusion Matrix.png')
+    resnet_results_matrix_path = os.path.join(script_directory, 'Images', 'Resnet', 'Confusion Matrix.jpg')
     resnet_results_matrix = Image.open(resnet_results_matrix_path)
     st.image(resnet_results_matrix, caption="Confusion Matrix", use_column_width=True)
 

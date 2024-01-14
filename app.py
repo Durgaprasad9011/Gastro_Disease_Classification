@@ -128,7 +128,7 @@ elif page == "Comparative Study":
     st.image(quantitative_image, use_column_width=True)
 
     script_directory_1 = os.path.dirname(os.path.abspath(__file__))
-    quantitative_image_path_1 = os.path.join(script_directory_1, 'Images', 'Table-01.jpg')
+    quantitative_image_path_1 = os.path.join(script_directory_1, 'Images', 'Table-02.png')
     quantitative_image_1 = Image.open(quantitative_image_path_1)
     st.image(quantitative_image_1, use_column_width=True)
 
@@ -159,28 +159,28 @@ elif page == "Comparative Study":
 
     # Densenet121 Model Results
     st.subheader("Densenet Model Results")
-    Densenet_results_plot_path = os.path.join(script_directory, 'Images', 'Densenet121', 'Loss, Acc plot.png')
+    Densenet_results_plot_path = os.path.join(script_directory, 'Images', 'Densenet121', 'Loss, Acc plot.jpg')
     Densenet_results_plot = Image.open(Densenet_results_plot_path)
     st.image(Densenet_results_plot, caption="Accuracy, Loss Plot", use_column_width=True)
     
-    Densenet_results_matrix_path = os.path.join(script_directory, 'Images', 'Densenet121', 'Confusion Matrix.png')
+    Densenet_results_matrix_path = os.path.join(script_directory, 'Images', 'Densenet121', 'Confusion Matrix.jpg')
     Densenet_results_matrix = Image.open(Densenet_results_matrix_path)
     st.image(Densenet_results_matrix, caption="Confusion Matrix", use_column_width=True)
 
     # Inception V3 Model Results
     st.subheader("Inception V3 Model Results")
-    Incnet_results_plot_path = os.path.join(script_directory, 'Images', 'Inception V3', 'Loss, Acc plot.png')
+    Incnet_results_plot_path = os.path.join(script_directory, 'Images', 'Inception V3', 'Loss, Acc plot.jpg')
     Incnet_results_plot = Image.open(Incnet_results_plot_path)
     st.image(Incnet_results_plot, caption="Accuracy, Loss Plot", use_column_width=True)
     
-    Incnet_results_matrix_path = os.path.join(script_directory, 'Images', 'Inception V3', 'Confusion Matrix.png')
+    Incnet_results_matrix_path = os.path.join(script_directory, 'Images', 'Inception V3', 'Confusion Matrix.jpg')
     Incnet_results_matrix = Image.open(Incnet_results_matrix_path)
     st.image(Incnet_results_matrix, caption="Confusion Matrix", use_column_width=True)
 
     # VGG-19 Model Results
-    vgg_results_plot_path = os.path.join(script_directory, 'Images', 'VGG-19', 'Model Loss.png')
-    vgg_results_accuracy_path = os.path.join(script_directory, 'Images', 'VGG-19', 'Model Accuracy.png')
-    vgg_results_matrix_path = os.path.join(script_directory, 'Images', 'VGG-19', 'Confusion Matrix.png')
+    vgg_results_plot_path = os.path.join(script_directory, 'Images', 'VGG-19', 'Model Loss.jpg')
+    vgg_results_accuracy_path = os.path.join(script_directory, 'Images', 'VGG-19', 'Model Accuracy.jpg')
+    vgg_results_matrix_path = os.path.join(script_directory, 'Images', 'VGG-19', 'Confusion Matrix.jpg')
     st.subheader("VGG-19 Model Results")
     vgg_results_matrix = Image.open(vgg_results_matrix_path)
     vgg_results_accuracy = Image.open(vgg_results_accuracy_path)

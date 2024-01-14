@@ -42,4 +42,31 @@
 - Deployment on Application or Edge Devices.
 - Conference Paper.
 
+## How to Run
 
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/kasamrohith02/Gastro_Disease_Classification
+   ```
+
+2. Change to the project directory:
+
+   ```bash
+   cd Gastro_Disease_Classification
+   ```
+
+3. Install the required libraries from `requirements.txt`:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+   If you already have the libraries installed, proceed to the next step.
+
+4. Once the dependencies are installed, you can run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+
+5. The code is provided in this repository for reference purposes.

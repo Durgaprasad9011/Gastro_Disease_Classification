@@ -137,50 +137,50 @@ elif page == "Comparative Study":
 
     # CNN-2D Model Results
     st.subheader("CNN-2D Model Results")
-
-    cnn_results_plot_path = "Images\CNN-2D\Loss, Acc plot.png"
+    
+    cnn_results_plot_path = os.path.join(script_directory, 'Images', 'CNN-2D', 'Loss, Acc plot.png')
     cnn_results_plot = Image.open(cnn_results_plot_path)
     st.image(cnn_results_plot, caption="Accuracy, Loss Plot", use_column_width=True)
     
-    cnn_results_matrix_path = "Images\CNN-2D\Confusion Matrix.png"
+    cnn_results_matrix_path = os.path.join(script_directory, 'Images', 'CNN-2D', 'Confusion Matrix.png')
     cnn_results_matrix = Image.open(cnn_results_matrix_path)
     st.image(cnn_results_matrix, caption="Confusion Matrix", use_column_width=True)
 
 
     # Resnet Model Results
     st.subheader("Resnet Model Results")
-    resnet_results_plot_path = "Images\Resnet\Loss, Accuracy Plot.jpg"
+    resnet_results_plot_path = os.path.join(script_directory, 'Images', 'Resnet', 'Loss, Acc plot.png')
     resnet_results_plot = Image.open(resnet_results_plot_path)
     st.image(resnet_results_plot, caption="Accuracy, Loss Plot", use_column_width=True)
     
-    resnet_results_matrix_path = "Images\Resnet\Confusion Matrix.jpg"
+    resnet_results_matrix_path = os.path.join(script_directory, 'Images', 'Resnet', 'Confusion Matrix.png')
     resnet_results_matrix = Image.open(resnet_results_matrix_path)
     st.image(resnet_results_matrix, caption="Confusion Matrix", use_column_width=True)
 
     # Densenet121 Model Results
     st.subheader("Densenet Model Results")
-    Densenet_results_plot_path = "Images\Densenet121\Loss, Acc plot.jpg"
+    Densenet_results_plot_path = os.path.join(script_directory, 'Images', 'Densenet121', 'Loss, Acc plot.png')
     Densenet_results_plot = Image.open(Densenet_results_plot_path)
     st.image(Densenet_results_plot, caption="Accuracy, Loss Plot", use_column_width=True)
     
-    Densenet_results_matrix_path = "Images\Densenet121\Confusion Matrix.jpg"
+    Densenet_results_matrix_path = os.path.join(script_directory, 'Images', 'Densenet121', 'Confusion Matrix.png')
     Densenet_results_matrix = Image.open(Densenet_results_matrix_path)
     st.image(Densenet_results_matrix, caption="Confusion Matrix", use_column_width=True)
 
     # Inception V3 Model Results
     st.subheader("Inception V3 Model Results")
-    Incnet_results_plot_path = "Images\Inception V3\Loss, Acc plot.jpg"
+    Incnet_results_plot_path = os.path.join(script_directory, 'Images', 'Inception V3', 'Loss, Acc plot.png')
     Incnet_results_plot = Image.open(Incnet_results_plot_path)
     st.image(Incnet_results_plot, caption="Accuracy, Loss Plot", use_column_width=True)
     
-    Incnet_results_matrix_path = "Images\Inception V3\Confusion Matrix.jpg"
+    Incnet_results_matrix_path = os.path.join(script_directory, 'Images', 'Inception V3', 'Confusion Matrix.png')
     Incnet_results_matrix = Image.open(Incnet_results_matrix_path)
     st.image(Incnet_results_matrix, caption="Confusion Matrix", use_column_width=True)
 
     # VGG-19 Model Results
-    vgg_results_plot_path = "Images\VGG-19\Model Loss.jpg"
-    vgg_results_accuracy_path = "Images\VGG-19\Model Accuracy.jpg"
-    vgg_results_matrix_path = "Images\VGG-19\Confusion Matrix.jpg"
+    vgg_results_plot_path = os.path.join(script_directory, 'Images', 'VGG-19', 'Model Loss.png')
+    vgg_results_accuracy_path = os.path.join(script_directory, 'Images', 'VGG-19', 'Model Accuracy.png')
+    vgg_results_matrix_path = os.path.join(script_directory, 'Images', 'VGG-19', 'Confusion Matrix.png')
     st.subheader("VGG-19 Model Results")
     vgg_results_matrix = Image.open(vgg_results_matrix_path)
     vgg_results_accuracy = Image.open(vgg_results_accuracy_path)
@@ -190,8 +190,8 @@ elif page == "Comparative Study":
     st.image(vgg_results_matrix, caption="Confusion Matrix", use_column_width=True)
 
     # Few Shot Learning Results
-    few_shot_results_plot_path = "Images\Few Shot Learning\Loss Plot.png"
-    few_shot_results_matrix_path = "Images\Few Shot Learning\Confusion Matrix.png"
+    few_shot_results_plot_path = os.path.join(script_directory, 'Images', 'Few Shot Learning', 'Loss Plot.png')
+    few_shot_results_matrix_path = os.path.join(script_directory, 'Images', 'Few Shot Learning', 'Confusion Matrix.png')
     st.subheader("Few Shot Learning Results")
     few_shot_results_plot = Image.open(few_shot_results_plot_path)
     few_shot_results_matrix = Image.open(few_shot_results_matrix_path)

@@ -79,8 +79,8 @@ elif page == "Dataset Analysis":
         st.write(i)
 
     # Display the image
-    st.write("### *Image Plot:*")
-    plot_image_path = "Images\Image Plot.jpg"
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+    plot_image_path = os.path.join(script_directory, 'Images', 'Image Plot.jpg')
     plot_image = Image.open(plot_image_path)
     st.image(plot_image, use_column_width=True)
 

@@ -9,6 +9,7 @@ import numpy as np
 from pymongo import MongoClient
 from bson.binary import Binary
 import warnings
+import os
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 

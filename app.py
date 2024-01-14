@@ -122,11 +122,13 @@ elif page == "Comparative Study":
     st.header("Quantitative Results")
 
     # Display Quantitative Results Image
-    quantitative_image_path = "Images\Table-01.jpg"
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+    quantitative_image_path = os.path.join(script_directory, 'Images', 'Table-01.jpg')
     quantitative_image = Image.open(quantitative_image_path)
     st.image(quantitative_image, use_column_width=True)
 
-    quantitative_image_path_1 = "Images\Table-02.png"
+    script_directory_1 = os.path.dirname(os.path.abspath(__file__))
+    quantitative_image_path_1 = os.path.join(script_directory_1, 'Images', 'Table-01.jpg')
     quantitative_image_1 = Image.open(quantitative_image_path_1)
     st.image(quantitative_image_1, use_column_width=True)
 
